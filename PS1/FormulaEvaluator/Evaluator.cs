@@ -86,7 +86,7 @@ namespace FormulaEvaluator
                 // Addition or Subtraction
                 else if (substrings[i].Equals("+") || substrings[i].Equals("-"))
                 {
-                    if (operatorStack.Count == 0) ;
+                    if (operatorStack.Count == 0); // This is here so that if the operator stack is empty it will skip past the logic.
                     else if (operatorStack.Peek().Equals("+"))
                     {
                         if (valueStack.Count < 2)
