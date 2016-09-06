@@ -129,7 +129,7 @@ namespace FormulaEvaluator
                     {
                         if (valueStack.Count < 2)
                         {
-                            throw new ArgumentException("The expression entered was not formatted correctly");
+                            throw new ArgumentException("The expression entered was not formatted correctly.");
                         }
                         else if (operatorStack.Peek().Equals("+"))
                         {
@@ -158,20 +158,19 @@ namespace FormulaEvaluator
                             operatorStack.Pop();
                             value = (int)valueStack.Pop() * (int)valueStack.Pop();
                             valueStack.Push(value);
-                            operatorStack.Push(substrings[i]);
+                            
                         }
                         else if (operatorStack.Peek().Equals("/"))
                         {
                             operatorStack.Pop();
                             int divideValue1 = (int)valueStack.Pop();
                             int divideValue2 = (int)valueStack.Pop();
-                            if (divideValue2 == 0)
+                            if (divideValue1 == 0)
                             {
                                 throw new DivideByZeroException("Cannot divide by 0");
                             }
-                            value = divideValue1 / divideValue2;
+                            value = divideValue2 / divideValue1;
                             valueStack.Push(value);
-                            operatorStack.Push(substrings[i]);
                         }
 
                     }
@@ -197,10 +196,11 @@ namespace FormulaEvaluator
                 {
                     throw new ArgumentException("The expression was not entered correctly.");
                 }
-                if (!(operatorStack.Peek().Equals("+") || operatorStack.Peek().Equals("-")))
+                else if (!(operatorStack.Peek().Equals("+") || operatorStack.Peek().Equals("-")))
                 {
                     throw new ArgumentException("The expression was not entered correctly.");
-                } else if (operatorStack.Peek().Equals("+"))
+                }
+                else if (operatorStack.Peek().Equals("+"))
                 {
                     value = (int)valueStack.Pop() + (int)valueStack.Pop();
                     return value;

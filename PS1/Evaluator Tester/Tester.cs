@@ -13,7 +13,7 @@ namespace Evaluator_Tester
         {
             testDictionary.Add("B1B1", 0);
             testDictionary.Add("CC123", 4);
-            int answer = FormulaEvaluator.Evaluator.Evaluate("(5 + 0 / 3) * 0 / 7 + (B1B1 / 5)", TestDelegate);
+            int answer = FormulaEvaluator.Evaluator.Evaluate("5 + 3 * 7 - 8 / (CC123 + 3) - 2 / 2", TestDelegate);
             Console.WriteLine(answer);
             Console.Read();
         }
