@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetUtilities", "SpreadsheetUtilities\SpreadsheetUtilities.csproj", "{AC2B329C-5189-46CC-8B7B-F806B8D292E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS2GradingTests", "UnitTestProject1\PS2GradingTests.csproj", "{655E451F-C165-4A91-B88A-F025A1AA8610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyGraph Debugger", "DependencyGraph Debugger\DependencyGraph Debugger.csproj", "{64573EE7-0FD3-4635-BA8F-6BE0D1D13D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Node", "Node\Node.csproj", "{630E4480-EA57-44B1-9882-C922970377C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC2B329C-5189-46CC-8B7B-F806B8D292E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2B329C-5189-46CC-8B7B-F806B8D292E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2B329C-5189-46CC-8B7B-F806B8D292E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2B329C-5189-46CC-8B7B-F806B8D292E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655E451F-C165-4A91-B88A-F025A1AA8610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655E451F-C165-4A91-B88A-F025A1AA8610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655E451F-C165-4A91-B88A-F025A1AA8610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655E451F-C165-4A91-B88A-F025A1AA8610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64573EE7-0FD3-4635-BA8F-6BE0D1D13D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64573EE7-0FD3-4635-BA8F-6BE0D1D13D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64573EE7-0FD3-4635-BA8F-6BE0D1D13D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64573EE7-0FD3-4635-BA8F-6BE0D1D13D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630E4480-EA57-44B1-9882-C922970377C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630E4480-EA57-44B1-9882-C922970377C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630E4480-EA57-44B1-9882-C922970377C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630E4480-EA57-44B1-9882-C922970377C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
